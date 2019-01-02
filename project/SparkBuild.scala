@@ -141,7 +141,7 @@ object SparkBuild extends PomBuild {
   // We special case the 'println' lint rule to only be a warning on compile, because adding
   // printlns for debugging is a common use case and is easy to remember to remove.
   val scalaStyleOnCompileConfig: String = {
-    val in = "scalastyle-config.xml"
+    val in = "/home/blade1/.sbt/0.13/staging/7ffb45575396c143b304/custom-spark/scalastyle-config.xml"
     val out = "scalastyle-on-compile.generated.xml"
     val replacements = Map(
       """customId="println" level="error"""" -> """customId="println" level="warn""""
